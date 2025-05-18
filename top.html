@@ -1,97 +1,67 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta name="viewport" content="width=1024">
   <meta charset="UTF-8">
-  <title>もちもち本棚</title>
+  <title>もちもち本棚ジャンル案内</title>
   <style>
     body {
-      background-color: #f9f6f2;
-      font-family: "Yu Mincho", serif;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
+      background-color: #FFDE90;
+      font-family: 'serif';
       text-align: center;
-      font-size: 36px;
-      margin-top: 30px;
-      color: #4b2e1e;
+      padding: 40px;
+      color: #4a3a2f;
     }
-    .pagination {
-      text-align: center;
-      font-size: 20px;
-      margin: 10px 0;
+    .shelf-index {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 50px 80px;
+      justify-items: center;
+      max-width: 600px;
+      margin: 0 auto;
     }
-    .pagination a {
+    .shelf-link {
+      width: 180px;
       text-decoration: none;
-      color: #5a3e36;
-      margin: 0 10px;
-      padding: 5px 10px;
-      border-radius: 6px;
+      color: #4a3a2f;
     }
-    .pagination a.active {
-      background-color: #e0d4c0;
-      font-weight: bold;
+    .shelf-link img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      transition: transform 0.2s ease;
     }
-    .bookshelf {
-      position: relative;
-      width: 1024px;
-      height: 1024px;
-      margin: 20px auto;
-      background: url("bookshelf.png") no-repeat center;
-      background-size: cover;
-    }
-    .book {
-      position: absolute;
-      width: 120px;
-      height: 170px;
-      transition: transform 0.3s ease;
-    }
-    .book:hover {
+    .shelf-link:hover img {
       transform: scale(1.05);
-      z-index: 1;
     }
-    .b1 { top: 170px; left: 195px; }
-.b2 { top: 170px; left: 365px; }
-.b3 { top: 170px; left: 535px; }
-.b4 { top: 170px; left: 705px; }
-.b5 { top: 437px; left: 195px; }
-.b6 { top: 437px; left: 365px; }
-.b7 { top: 437px; left: 535px; }
-.b8 { top: 437px; left: 705px; }
-.b9 { top: 750px; left: 195px; }
-.b10 { top: 750px; left: 365px; }
-.b11 { top: 750px; left: 535px; }
-.b12 { top: 750px; left: 705px; }
-
+    .shelf-link p {
+      margin-top: 10px;
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
-
-<h1>もちもち本棚</h1>
-
-<div class="pagination">
-  <a class="active" href="#">1</a>
-  <a href="#">2</a>
-</div>
-
-<div class="bookshelf">
-  <a href="#" class="book b1"><img src="cover1.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b2"><img src="cover2.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b3"><img src="cover3.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b4"><img src="cover4.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b5"><img src="cover5.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b6"><img src="cover6.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b7"><img src="cover7.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b8"><img src="cover8.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b9"><img src="cover9.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b10"><img src="cover10.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b11"><img src="cover1.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b12"><img src="cover2.jpg" width="120" height="170" alt=""></a>
-</div>
-<div class="pagination">
-  <a class="active" href="#">1</a>
-  <a href="#">2</a>
-</div>
+  <h1>お好きな本棚へどうぞ──</h1>
+  <div class="shelf-index">
+    <a href="tourabu.html" class="shelf-link">
+      <img src="locked_door_resized.png" alt="封印された扉">
+      <p>刀剣乱舞</p>
+    </a>
+    <a href="#" class="shelf-link">
+      <img src="locked_door_resized.png" alt="封印された扉">
+      <p>文豪とアルケミスト＆オカルト幼児</p>
+    </a>
+    <a href="#" class="shelf-link">
+      <img src="locked_door_resized.png" alt="封印された扉">
+      <p>ツイステッドワンダーランド＆島崎キャラ</p>
+    </a>
+    <a href="#" class="shelf-link">
+      <img src="locked_door_resized.png" alt="封印された扉">
+      <p>TIGER＆BUNNY 2</p>
+    </a>
+    <a href="#" class="shelf-link">
+      <img src="locked_door_resized_close.png" alt="封印された扉">
+      <p>封印中</p>
+    </a>
+  </div>
 </body>
 </html>

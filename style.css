@@ -1,0 +1,72 @@
+
+body {
+  background-color: #FFDE90;
+  font-family: "Yu Mincho", serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 30px;
+  color: #4b2e1e;
+}
+
+.bookshelf {
+  position: relative;
+  width: 1024px;
+  height: 1024px;
+  margin: 20px auto;
+  background: url("bookshelf.png") no-repeat center;
+  background-size: cover;
+}
+
+.book {
+  position: absolute;
+  width: 120px;
+  height: 170px;
+  transition: transform 0.3s ease;
+}
+
+.book:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+/* 帯説明 */
+.book-info {
+  display: none;
+  position: absolute;
+  top: 175px;
+  left: 0;
+  width: 120px;
+  background-color: #e7caa0;
+  padding: 6px 8px;
+  font-size: 13px;
+  border-radius: 4px;
+  line-height: 1.4;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.book:hover .book-info {
+  display: block;
+}
+
+.book-info.show {
+  display: block;
+}
+
+/* 本の位置固定 */
+.b1 { top: 170px; left: 195px; }
+.b2 { top: 170px; left: 365px; }
+.b3 { top: 170px; left: 535px; }
+.b4 { top: 170px; left: 705px; }
+.b5 { top: 437px; left: 195px; }
+.b6 { top: 437px; left: 365px; }
+.b7 { top: 437px; left: 535px; }
+.b8 { top: 437px; left: 705px; }
+.b9 { top: 750px; left: 195px; }
+.b10 { top: 750px; left: 365px; }
+.b11 { top: 750px; left: 535px; }
+.b12 { top: 750px; left: 705px; }

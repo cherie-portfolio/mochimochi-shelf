@@ -1,114 +1,71 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta name="viewport" content="width=1024">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024">
   <title>刀剣乱舞</title>
-  <style>
-    body {
-      background-color: #FFDE90;
-      font-family: "Yu Mincho", serif;
-      margin: 0;
-      padding: 0;
-    }
-    h1 {
-      text-align: center;
-      font-size: 36px;
-      margin-top: 30px;
-      color: #4b2e1e;
-    }
-    .pagination {
-      text-align: center;
-      font-size: 20px;
-      margin: 10px 0;
-    }
-    .pagination a {
-      text-decoration: none;
-      color: #5a3e36;
-      margin: 0 10px;
-      padding: 5px 10px;
-      border-radius: 6px;
-    }
-    .pagination a.active {
-      background-color: #e0d4c0;
-      font-weight: bold;
-    }
-    .bookshelf {
-      position: relative;
-      width: 1024px;
-      height: 1024px;
-      margin: 20px auto;
-      background: url("bookshelf.png") no-repeat center;
-      background-size: cover;
-    }
-    .book {
-      position: absolute;
-      width: 120px;
-      height: 170px;
-      transition: transform 0.3s ease;
-    }
-    .book:hover {
-      transform: scale(1.05);
-      z-index: 1;
-    }
-    .b1 { top: 170px; left: 195px; }
-.b2 { top: 170px; left: 365px; }
-.b3 { top: 145px; left: 535px; }
-.b4 { top: 170px; left: 705px; }
-.b5 { top: 437px; left: 195px; }
-.b6 { top: 437px; left: 365px; }
-.b7 { top: 437px; left: 535px; }
-.b8 { top: 437px; left: 705px; }
-.b9 { top: 750px; left: 195px; }
-.b10 { top: 750px; left: 365px; }
-.b11 { top: 750px; left: 535px; }
-.b12 { top: 750px; left: 705px; }
-
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>刀剣乱舞</h1>
 
-<h1>刀剣乱舞</h1>
+  <div class="bookshelf">
 
+    <div class="book b1" onclick="toggleInfo(this)">
+      <img src="cover1.jpg" alt="本丸・図書館怪異探訪" width="120" height="170">
+      <div class="book-info">幼児審神者と司書が怪異と遭遇！？<br>刀剣男士・文豪は大忙し！（クロスオーバーではありません）</div>
+    </div>
+    <div class="book b2" onclick="toggleInfo(this)">
+      <img src="cover2.jpg" alt="図書館に、君はいた。" width="120" height="170">
+      <div class="book-info">ちいさな司書が確かに図書館に存在していた軌跡。<br>文豪たちとの日常物語。</div>
+    </div>
+    <div class="book b3" onclick="toggleInfo(this)">
+      <img src="cover3.jpg" alt="幼児審神者と幼児司書のオカルト本" width="120" height="170">
+      <div class="book-info">オカルトに巻き込まれる幼児な双子のお話。<br>（クロスオーバーではありません）</div>
+    </div>
+    <div class="book b4" onclick="toggleInfo(this)">
+      <img src="cover4.jpg" alt="監督生が、なぜか俺をお姫様と呼ぶんだが。" width="120" height="170">
+      <div class="book-info">シルバー先輩と女監督生（ネームレス）の<br>ラブでコメな感じの物語。</div>
+    </div>
+    <div class="book b5">
+      <img src="cover1.jpg" alt="作品5" width="120" height="170">
+    </div>
+    <div class="book b6">
+      <img src="cover2.jpg" alt="作品6" width="120" height="170">
+    </div>
+    <div class="book b7">
+      <img src="cover3.jpg" alt="作品7" width="120" height="170">
+    </div>
+    <div class="book b8">
+      <img src="cover4.jpg" alt="作品8" width="120" height="170">
+    </div>
+    <div class="book b9">
+      <img src="cover1.jpg" alt="作品9" width="120" height="170">
+    </div>
+    <div class="book b10">
+      <img src="cover2.jpg" alt="作品10" width="120" height="170">
+    </div>
+    <div class="book b11">
+      <img src="cover3.jpg" alt="作品11" width="120" height="170">
+    </div>
+    <div class="book b12">
+      <img src="cover4.jpg" alt="作品12" width="120" height="170">
+    </div>
+  </div>
 
-<div class="bookshelf">
-<a href="#" class="book b1" title="本丸・図書館怪異探訪
-幼児審神者と司書が怪異と遭遇！？
-刀剣男士・文豪は大忙し！（クロスオーバーではありません）">
-  <img src="cover1.jpg" alt="本丸・図書館怪異探訪" style="width:100%; height:auto;">
-</a>
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="top.html" style="text-decoration: none; font-size: 16px; color: #4a3a2f;">
+      ← もちもち本棚ジャンル一覧にもどる
+    </a>
+  </div>
 
-<a href="#" class="book b2" title="図書館に、君はいた。
-ちいさな司書が確かに図書館に存在していた軌跡。
-文豪たちとの日常物語。">
-  <img src="cover2.jpg" alt="図書館に、君はいた。" style="width:100%; height:auto;">
-</a>
-
-<a href="#" class="book b3" title="幼児審神者と幼児司書のオカルト本
-オカルトに巻き込まれる幼児な双子のお話。
-（クロスオーバーではありません）">
-  <img src="cover3.jpg" alt="幼児審神者と幼児司書のオカルト本" style="width:100%; height:auto;">
-</a>
-
-<a href="#" class="book b4" title="監督生が、なぜか俺をお姫様と呼ぶんだが。
-シルバー先輩と女監督生（ネームレス）の
-ラブでコメな感じの物語。">
-  <img src="cover4.jpg" alt="監督生が、なぜか俺をお姫様と呼ぶんだが。" style="width:100%; height:auto;">
-</a>
-
-  <a href="#" class="book b5"><img src="cover5.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b6"><img src="cover6.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b7"><img src="cover7.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b8"><img src="cover8.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b9"><img src="cover9.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b10"><img src="cover10.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b11"><img src="cover1.jpg" width="120" height="170" alt=""></a>
-  <a href="#" class="book b12"><img src="cover2.jpg" width="120" height="170" alt=""></a>
-</div>
-<div style="text-align: center; margin-top: 40px;">
-  <a href="top.html" style="text-decoration: none; font-size: 16px; color: #4a3a2f;">
-    ← もちもち本棚ジャンル一覧にもどる
-  </a>
-</div>
+  <script>
+    function toggleInfo(el) {
+      const info = el.querySelector('.book-info');
+      if (info) {
+        info.classList.toggle('show');
+      }
+    }
+  </script>
 </body>
 </html>

@@ -70,3 +70,49 @@ h1 {
 .b10 { top: 750px; left: 365px; }
 .b11 { top: 750px; left: 535px; }
 .b12 { top: 750px; left: 705px; }
+
+
+.intro {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+h2 {
+  font-size: 20px;
+  border-left: 4px solid #d6b07a;
+  padding-left: 10px;
+  color: #5a3e36;
+}
+
+.icon-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.icon-grid img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  background-color: #fffaf0;
+  border-radius: 12px;
+  padding: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.icon-grid img:hover {
+  transform: scale(1.05);
+}

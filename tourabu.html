@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=1024">
   <title>刀剣乱舞</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .book-info {
+      display: none;
+      background: #fffaf0;
+      border: 1px solid #d6b07a;
+      border-radius: 8px;
+      padding: 8px;
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.4;
+      text-align: left;
+    }
+    .book-info.show {
+      display: block;
+    }
+    .book-links a {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 13px;
+      color: #4b2e1e;
+      background-color: #f0e6dc;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .book-links a:hover {
+      background-color: #e8d9c4;
+    }
+  </style>
 </head>
 <body>
   <h1>刀剣乱舞</h1>
@@ -13,20 +42,48 @@
 
     <div class="book b1" onclick="toggleInfo(this)">
       <img src="cover1.jpg" alt="本丸・図書館怪異探訪" width="120" height="170">
-      <div class="book-info">幼児審神者と司書が怪異と遭遇！？<br>刀剣男士・文豪は大忙し！（クロスオーバーではありません）</div>
+      <div class="book-info">
+        幼児審神者と司書が怪異と遭遇！？<br>
+        刀剣男士・文豪は大忙し！（クロスオーバーではありません）<br>
+        <div class="book-links">
+          <a href="https://booth.pm/item/xxx" target="_blank">▶ BOOTH</a>
+          <a href="https://www.fromagee.jp/item/xxx" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
     </div>
+
     <div class="book b2" onclick="toggleInfo(this)">
       <img src="cover2.jpg" alt="図書館に、君はいた。" width="120" height="170">
-      <div class="book-info">ちいさな司書が確かに図書館に存在していた軌跡。<br>文豪たちとの日常物語。</div>
+      <div class="book-info">
+        ちいさな司書が確かに図書館に存在していた軌跡。<br>
+        文豪たちとの日常物語。<br>
+        <div class="book-links">
+          <a href="https://booth.pm/item/yyy" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
     </div>
+
     <div class="book b3" onclick="toggleInfo(this)">
       <img src="cover3.jpg" alt="幼児審神者と幼児司書のオカルト本" width="120" height="170">
-      <div class="book-info">オカルトに巻き込まれる幼児な双子のお話。<br>（クロスオーバーではありません）</div>
+      <div class="book-info">
+        オカルトに巻き込まれる幼児な双子のお話。<br>
+        （クロスオーバーではありません）<br>
+        <div class="book-links">
+          <a href="https://booth.pm/item/zzz" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
     </div>
+
     <div class="book b4" onclick="toggleInfo(this)">
       <img src="cover4.jpg" alt="監督生が、なぜか俺をお姫様と呼ぶんだが。" width="120" height="170">
-      <div class="book-info">シルバー先輩と女監督生（ネームレス）の<br>ラブでコメな感じの物語。</div>
+      <div class="book-info">
+        シルバー先輩と女監督生（ネームレス）の<br>ラブでコメな感じの物語。<br>
+        <div class="book-links">
+          <a href="https://booth.pm/item/aaa" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
     </div>
+
     <div class="book b5">
       <img src="cover1.jpg" alt="作品5" width="120" height="170">
     </div>

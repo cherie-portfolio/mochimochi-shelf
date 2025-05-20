@@ -37,10 +37,74 @@
       margin-top: 10px;
       font-size: 16px;
     }
+    .notice-section {
+      background-color: #fef0b5;
+      border: 3px solid #a67c52;
+      border-radius: 10px;
+      margin: 30px auto 20px;
+      padding: 15px;
+      width: 90%;
+      max-width: 800px;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .notice-section img {
+      width: 150px;
+      height: auto;
+      margin-right: 40px;
+    }
+    .notice-board {
+      text-align: left;
+      font-size: 16px;
+      color: #3e2e1e;
+    }
+    .event-door-row {
+      display: flex;
+      justify-content: center;
+      margin: 30px auto 10px;
+    }
+    .event-door {
+      text-align: center;
+    }
+    .event-door img {
+      width: 180px;
+      height: auto;
+    }
+    .event-door span {
+      display: block;
+      margin-top: 8px;
+      font-size: 18px;
+      color: #a7523a;
+    }
+
   </style>
 </head>
 <body>
+
+  <div class="notice-section">
+    <img src="notice_omochi.png" alt="お知らせもち">
+    <div class="notice-board">
+      <strong>【参加イベント】</strong><br>
+      8/3　Novelsky Riot Carnival（エアブー）/ツイステ<br>
+　　　夜明けの騎士と右大将のホラーSS展示予定<br>
+　　　夏コミ当落待ち<br>
+      9/21　マッスル大祭/キン肉マン<br>
+　　　ペンタゴン夢本２冊発行予定<br>
+    </div>
+  </div>
+<br>
   <h1>お好きな本棚へどうぞ──</h1>
+
+
+  <div class="event-door-row">
+    <div class="event-door">
+      <a href="event.html"><img src="locked_door_resized_close.png" alt="イベント展示"></a>
+      <span>封印中</span>
+    </div>
+  </div>
+
   <div class="shelf-index">
     <a href="tourabu.html" class="shelf-link">
       <img src="locked_door_resized.png" alt="封印された扉">
@@ -50,7 +114,7 @@
       <img src="locked_door_resized.png" alt="封印された扉">
       <p>文豪とアルケミスト＆オカルト幼児</p>
     </a>
-    <a href="#" class="shelf-link">
+    <a href="twst_shimazaki.html" class="shelf-link">
       <img src="locked_door_resized.png" alt="封印された扉">
       <p>ツイステッドワンダーランド＆島崎キャラ</p>
     </a>

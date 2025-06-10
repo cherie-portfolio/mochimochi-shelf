@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024">
+  <title>文アル・幼児</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .book-info {
+      display: none;
+      background: #fffaf0;
+      border: 1px solid #d6b07a;
+      border-radius: 8px;
+      padding: 8px;
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.4;
+      text-align: left;
+    }
+    .book-info.show {
+      display: block;
+    }
+    .book-links a {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 13px;
+      color: #4b2e1e;
+      background-color: #f0e6dc;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .book-links a:hover {
+      background-color: #e8d9c4;
+    }
+  </style>
+</head>
+<body>
+  <h1>文豪とアルケミスト＆オカルト幼児</h1>
+
+  <div class="bookshelf">
+
+    <div class="book b1" onclick="toggleInfo(this)">
+      <img src="bunal_cover1.jpg" alt="幼児司書ミニミニSS集" width="120" height="170">
+      <div class="book-info">
+幼児司書<br>
+ちいさなかわいい司書のお話。<br>
+登場文豪、太宰・中原多め。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5457698" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b2" onclick="toggleInfo(this)">
+      <img src="bunal_cover2.jpg" alt="図書館に君はいた。" width="120" height="170">
+      <div class="book-info">
+幼児司書が図書館に存在した軌跡。<br>
+基本的には幼児溺愛傾向、命日のお話なども含まれます。<br>
+登場文豪は無頼、中也、秋声、芥川など。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5652449" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2374693" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="book b5" onclick="toggleInfo(this)">
+      <img src="youji_cover1.jpg" alt="オカルト幼児新書" width="120" height="170">
+      <div class="book-info">
+幼児審神者と幼児司書のオカルト新書<br>
+幼児が怪異に巻き込まれて刀剣男士や文豪が頑張る中編集です。<br>
+※クロスオーバーではありません。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5406233" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2419837" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b6" onclick="toggleInfo(this)">
+      <img src="youji_cover2.jpg" alt="本丸・図書館　怪異探訪" width="120" height="170">
+      <div class="book-info">
+幼児審神者と幼児司書のオカルト文庫<br>
+幼児が怪異に巻き込まれて刀剣男士や文豪が頑張る短編集です。<br>
+※クロスオーバーではありません。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5745227" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2419839" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="book b7">
+      <img src="mochigurumi.png" alt="作品6" width="120" height="170">
+    </div>
+
+
+    <div class="book b12" onclick="toggleInfo(this)">
+      <img src="youji_cover0.jpg" alt="マグカップ" width="120" height="170">
+      <div class="book-info">
+はつが様描き下ろし可愛い幼児のマグカップ。<br>
+読書のお供にいかがでしょうか？<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5591280" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="top.html" style="text-decoration: none; font-size: 16px; color: #4a3a2f;">
+      ← もちもち本棚ジャンル一覧にもどる
+    </a>
+  </div>
+
+  <script>
+    function toggleInfo(el) {
+      const info = el.querySelector('.book-info');
+      if (info) {
+        info.classList.toggle('show');
+      }
+    }
+  </script>
+</body>
+</html>

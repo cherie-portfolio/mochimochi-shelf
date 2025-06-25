@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024">
+  <title>TIGER&BUNNY2</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .book-info {
+      display: none;
+      background: #fffaf0;
+      border: 1px solid #d6b07a;
+      border-radius: 8px;
+      padding: 8px;
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.4;
+      text-align: left;
+    }
+    .book-info.show {
+      display: block;
+    }
+    .book-links a {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 13px;
+      color: #4b2e1e;
+      background-color: #f0e6dc;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .book-links a:hover {
+      background-color: #e8d9c4;
+    }
+  </style>
+</head>
+<body>
+  <h1>TIGRER&BUNNY2>
+
+  <div class="bookshelf">
+
+    <div class="book b1" onclick="toggleInfo(this)">
+      <img src="tandb2_cover1.jpg" alt="花喰いヴィランとまっしろヒーロー（上）" width="120" height="170">
+      <div class="book-info">
+        個性強めでヴィラン気質な新米マネージャーが新米ヒーローの彼と恋に落ちるまで。<br>
+        本編沿いですが本編には登場しません。やや塩対応白くんです。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5652405" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2374694" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b2">
+      <img src="mochigurumi.png" alt="作品10" width="120" height="170">
+    </div>
+
+    <div class="book b3" onclick="toggleInfo(this)">
+      <img src="tandb2_cover3.jpg" alt="blue in blue" width="120" height="170">
+      <div class="book-info">
+        個性強め夢主とトーマスの青鬼パロディホラー🔞R18🔞<br>
+        行方不明者が多発し化け物の出る館でちょっとHな除霊バトル！？<br>
+        <div class="book-links">
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2311513" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b4" onclick="toggleInfo(this)">
+      <img src="tandb2_cover4.jpg" alt="Marry me,make me,happy!!" width="120" height="170">
+      <div class="book-info">
+        個性強め夢主がトーマスからのプロポーズに頷くために、関係者(昴、カルロッタ、ルビー)に相談したりしながら最終的に頷くまでのお話です。はぴえんです。<br>
+        <div class="book-links">
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2373973" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b5" onclick="toggleInfo(this)">
+      <img src="tandb2_cover5.jpg" alt="白薔薇を日々染め抜いて" width="120" height="170">
+      <div class="book-info">
+        今まで書いたトマ×個性強め夢主のお話をほとんど収録した366pの文庫本。<br>
+        ギスギス、甘々なんでもあり。書き下ろしもあります！<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5995550" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2494818" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b6" onclick="toggleInfo(this)">
+      <img src="tandb2_cover6.jpg" alt="重ねて、" width="120" height="170">
+      <div class="book-info">
+        トマ×主のHなお話を３話収録した🔞R18🔞<br>
+        糖分強め、全面箔ギラギラの本になってます！夢主個性強め。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5995560" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2494989" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b7" onclick="toggleInfo(this)">
+      <img src="tandb2_cover7.jpg" alt="僕だけのステラ" width="120" height="170">
+      <div class="book-info">
+        完売。現在pixivにて全文公開中。<br>
+トーマスの提案で式場見学に行くことになる個性強夢主の話。<br>
+        <div class="book-links">
+          <a href="https://www.pixiv.net/novel/show.php?id=23700665" target="_blank">▶ Pixiv</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="top.html" style="text-decoration: none; font-size: 16px; color: #4a3a2f;">
+      ← もちもち本棚ジャンル一覧にもどる
+    </a>
+  </div>
+
+  <script>
+    function toggleInfo(el) {
+      const info = el.querySelector('.book-info');
+      if (info) {
+        info.classList.toggle('show');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024">
+  <title>ノベフェスタ</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .book-info {
+      display: none;
+      background: #fffaf0;
+      border: 1px solid #d6b07a;
+      border-radius: 8px;
+      padding: 8px;
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.4;
+      text-align: left;
+    }
+    .book-info.show {
+      display: block;
+    }
+    .book-links a {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 13px;
+      color: #4b2e1e;
+      background-color: #f0e6dc;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .book-links a:hover {
+      background-color: #e8d9c4;
+    }
+.rollover {
+  display: inline-block;
+  position: relative;
+}
+.rollover img {
+  display: block;
+  transition: opacity 0.3s ease;
+}
+.rollover img.hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.rollover:hover img.hover {
+  opacity: 1;
+}
+  </style>
+</head>
+<body>
+  <h1>ノベフェスタ！</h1><br>
+<center>開催おめでとうございます！<br>12種の2000文字SS展示とあのおもちの頒布をしております。<br>どうぞお楽しみください。「ぴんぎゃあ！」<br>
+<a href="https://x.com/torinaxx/status/1894302898277732440" target="_blank">こちら</a>からタイトルとワードパレットをお借りしています。<br>
+また、当会の夢主に名前変換システムはございません。<br>
+<br>
+
+</center>
+
+  <div class="bookshelf">
+
+ <div class="book b1" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover1.png" alt="地縛少年花子くん" width="120" height="170">
+      <div class="book-info">
+        源光夢<br>
+        夕焼け空の風の中、恋を自覚する光くんの話。<br>夢主がグロテスクです。ご注意ください。<br>
+        <div class="book-links">
+          <a href="novefesta/1_koukou.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b2" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover2.png" alt="水晶庭園" width="120" height="170">
+      <div class="book-info">
+        まっしろな箱庭に暮らす科学者の一次創作。<br>
+        ブロマンスなのか作者もわからない一種の崇拝の物語。<br>
+        <div class="book-links">
+          <a href="novefesta/2_teien.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b3" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover3.png" alt="ツイステ" width="120" height="170">
+      <div class="book-info">
+        シルバー夢<br>おとぎ話から目覚められないシルバー先輩と現実的な監督生の話。<br>
+<div class="book-links">
+          <a href="novefesta/3_sirusidu.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="book b4" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover4.png" alt="ワールドトリガー" width="120" height="170">
+      <div class="book-info">
+        ヒュース夢<br>初恋はレモンの味がする話。<br>
+<div class="book-links">
+          <a href="novefesta/4_hyuche.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="book b5" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover5.png" alt="一次創作" width="120" height="170">
+      <div class="book-info">
+        一次創作／微ホラー<br>ある馬車での男女の会話劇。<br>
+<div class="book-links">
+          <a href="novefesta/5_cromira.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b6" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover6.png" alt="タイバニ２" width="120" height="170">
+      <div class="book-info">
+        トーマス夢<br>子供な彼とヴィランな彼女のもどかしくも無垢な話。<br>
+<div class="book-links">
+          <a href="novefesta/6_thomaruri.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="book b7" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover7.png" alt="プリオケ" width="120" height="170">
+      <div class="book-info">
+        ギータ夢。<br>
+        詩作少女とギータさんのもどかしくて罪の味のする『恋の歌』。<br>
+        <div class="book-links">
+          <a href="novefesta/7_gitamado.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b8" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover8.png" alt="ヒロアカ" width="120" height="170">
+      <div class="book-info">
+        肉倉精児夢<br>
+        血の色に囚われた投身少女とヒーローの血みどろまみれの恋のお話。<br>
+        <div class="book-links">
+          <a href="novefesta/8_sisieno.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b9" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover9.png" alt="刀剣乱舞" width="120" height="170">
+      <div class="book-info">
+        幼児審神者<br>
+        ちいさな審神者への亀甲貞宗の拗らせた深い愛のお話。<br>
+        <div class="book-links">
+          <a href="novefesta/9_kissani.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b10" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover10.png" alt="刀剣乱舞" width="120" height="170">
+      <div class="book-info">
+        八丁念仏夢<br>
+        ホラーと古備前と八丁と！　いつもの怪異対策本丸です。<br>
+        <div class="book-links">
+          <a href="novefesta/10_hachibeni.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b11" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover11.png" alt="キュウレンジャー" width="120" height="170">
+      <div class="book-info">
+        バランス<br>
+        バランスくんと、「わたし」と、過去の思い出になった物語。<br>
+        <div class="book-links">
+          <a href="novefesta/11_bararuri.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b12" onclick="toggleInfo(this)">
+      <img src="novefesta/novefes_cover12.png" alt="文アル" width="120" height="170">
+      <div class="book-info">
+        幼児司書<br>
+        水に沈む太宰と幼児司書のゆらめく問答のお話。<br>
+        <div class="book-links">
+          <a href="novefesta/12_dazasisyo.html">▶ 展示</a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+<center><br>↓
+<br>↓
+<br>↓
+<br>↓
+<br>↓
+<br>↓
+<br>？<br>
+<a href="https://mrcycherie.booth.pm/items/7575816" target="_blank" rel="noopener noreferrer" class="rollover">
+  <img src="novefesta/pigyabako.png" alt="ぴ…">
+  <img src="novefesta/openpigyabako.png" class="hover" alt="ぴぎゃす！">
+</a></center>
+<br>
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="top.html" style="text-decoration: none; font-size: 16px; color: #4a3a2f;">
+      ← もちもち本棚ジャンル一覧にもどる
+    </a>
+  </div>
+
+  <script>
+    function toggleInfo(el) {
+      const info = el.querySelector('.book-info');
+      if (info) {
+        info.classList.toggle('show');
+      }
+    }
+  </script>
+</body>
+</html>

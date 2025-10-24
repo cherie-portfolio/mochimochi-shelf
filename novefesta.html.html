@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024">
+  <title>刀剣乱舞</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .book-info {
+      display: none;
+      background: #fffaf0;
+      border: 1px solid #d6b07a;
+      border-radius: 8px;
+      padding: 8px;
+      margin-top: 4px;
+      font-size: 13px;
+      line-height: 1.4;
+      text-align: left;
+    }
+    .book-info.show {
+      display: block;
+    }
+    .book-links a {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 13px;
+      color: #4b2e1e;
+      background-color: #f0e6dc;
+      padding: 2px 6px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+    .book-links a:hover {
+      background-color: #e8d9c4;
+    }
+  </style>
+</head>
+<body>
+  <h1>刀剣乱舞</h1>
+
+  <div class="bookshelf">
+
+    <div class="book b1" onclick="toggleInfo(this)">
+      <img src="tourabu_cover1.jpg" alt="きっこーと！にーたんと！" width="120" height="170">
+      <div class="book-info">
+        幼児審神者（男の子）が寵愛する亀甲貞宗と、<br>
+        彼が修行から帰るまでの物語。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5617817" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2419910" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b2" onclick="toggleInfo(this)">
+      <img src="tourabu_cover2.jpg" alt="なかよくなりたい！" width="120" height="170">
+      <div class="book-info">
+        ちいさな審神者が新しくやってきた八丁念仏と<br>
+        仲良くなろうと奮闘するお話。八丁も頑張る。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/5745158" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2419909" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b3" onclick="toggleInfo(this)">
+      <img src="tourabu_cover3.jpg" alt="それと、あなたに逢えたので。" width="120" height="170">
+      <div class="book-info">
+        ←の裏で起こっていた八丁念仏と審神者代行業者の女性との<br>
+        恋の始まりの物語。（not審神者恋愛）<br>
+        <div class="book-links">
+          <a href="http://mrcycherie.booth.pm/items/5745243" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b4" onclick="toggleInfo(this)">
+      <img src="tourabu_cover4.jpg" alt="八丁八振八恋夜" width="120" height="170">
+      <div class="book-info">
+        八振りの八丁念仏が八夜遊郭を訪れては、それぞれ<br>
+        聞き手の遊女に己の恋を語る少し切ない恋物語集。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/6010038" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2667037" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b5" onclick="toggleInfo(this)">
+      <img src="tourabu_cover5.jpg" alt="古備前の審神者育児日誌" width="120" height="170">
+      <div class="book-info">
+        大包平がパパになり、鶯丸は茶を啜り、八丁は戸惑う。<br>
+        元気な男児審神者との古備前の本丸生活を描いた短編集。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/6204233" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b6" onclick="toggleInfo(this)">
+      <img src="tourabu_cover6.jpg" alt="明日の来ない日" width="120" height="170">
+      <div class="book-info">
+        八さに×初期刀×ホラーゲー第１弾。<br>
+        「つぐの日」をモチーフに、真っ直ぐな道の先で出会った加州清光の怪異と審神者の因縁の物語。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/6010050" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2667039" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b7" onclick="toggleInfo(this)">
+      <img src="tourabu_cover7.jpg" alt="朱の苦地獄" width="120" height="170">
+      <div class="book-info">
+        八さに×初期刀×ホラーゲー第２弾。<br>
+        「影廊」をモチーフに血の池本丸の異層に飲まれた審神者、八丁、松井が血まみれの頭巾を被り徘徊する山姥切国広の謎に迫る。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/6289287" target="_blank">▶ BOOTH</a>
+          <a href="https://www.melonbooks.co.jp/fromagee/detail/detail.php?product_id=2667038" target="_blank">▶ フロマージュ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b8" onclick="toggleInfo(this)">
+      <img src="tourabu_cover8.jpg" alt="そは廻帰の花なれど" width="120" height="170">
+      <div class="book-info">
+        八さに×初期刀×ホラーゲー第３弾。<br>
+        「青鬼」をモチーフにデスループする本丸に囚われ、桔梗鬼に襲われる八丁と審神者、そして記憶喪失の骨喰。死の因果を断ち切る方法と咲き誇る桔梗の意味は。<br>
+        <div class="book-links">
+          <a href="https://mrcycherie.booth.pm/items/6435402" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b9" onclick="toggleInfo(this)">
+      <img src="tourabu_cover9.jpg" alt="そは廻帰の花なれど" width="120" height="170">
+      <div class="book-info">
+        八さに×初期刀×ホラーゲー第４弾。<br>
+        「Ib」をモチーフにミュージアムのような本丸に赴いた八丁と審神者。この本丸の主を探しているという源清麿と共に美術館の深くに潜っていくことになるが……<br>
+        <div class="book-links">
+          <a href="" target="_blank">▶ BOOTH</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="book b10">
+      <img src="mochigurumi.png" alt="作品10" width="120" height="170">
+    </div>
+
+  </div>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="top.html" style="text-decoration: none; font-size: 16px; color: #4a3a2f;">
+      ← もちもち本棚ジャンル一覧にもどる
+    </a>
+  </div>
+
+  <script>
+    function toggleInfo(el) {
+      const info = el.querySelector('.book-info');
+      if (info) {
+        info.classList.toggle('show');
+      }
+    }
+  </script>
+</body>
+</html>
